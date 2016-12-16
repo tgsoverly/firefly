@@ -1,0 +1,25 @@
+{
+    "name": "firefly",
+    "version": "1.0.0",
+    "description": "firefly affect for the the browser",
+    "main": "main.js",
+    "devDependencies": {
+        "browserify": "^12.0.1",
+        "budo": "^7.1.0",
+        "uglify-js": "^2.6.1"
+    },
+    "scripts": {
+        "start": "budo index.js:firefly.min.js --live",
+        "build": "browserify index.js | uglifyjs -m -c warnings=false > firefly.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tgsoverly/firefly.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tgsoverly/firefly/issues"
+    },
+    "homepage": "https://github.com/tgsoverly/firefly#readme"
+}
