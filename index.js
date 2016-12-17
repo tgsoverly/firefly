@@ -1,2 +1,1 @@
-var firefly = require('./lib/firefly.js');
-firefly();
+window.firefly = require('./lib/firefly.js');
